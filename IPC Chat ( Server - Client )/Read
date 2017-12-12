@@ -1,0 +1,11 @@
+Here is simple chat server using Inter Process Communication.
+
+Server can able to hold unlimited client and provide chatting between them using FIFO struct.
+
+Client:
+  -Communication is hold by the key of the server.
+  -Getting messages from the other clients by the server and reads them from FIFO with a thread function.
+  
+Server:
+  -Use FIFO structure to send messages between clients.
+  -Creates and deletes a message queue at the begining of the program and the end of the program.
